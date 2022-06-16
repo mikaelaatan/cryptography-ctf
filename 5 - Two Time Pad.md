@@ -30,11 +30,11 @@ The **strategy** was to look for the remaining characters of “CSCI_184.03_CTF{
 
 We knew that the characters were in C5, so we applied XOR to C2 and C5 to retrieve the first 16 characters of M2. Image below is from the crib drag website (using C2 as ciphertext 1 input, and flag as ciphertext 2 input). The result from the crib drag is the message from C2 which is `here is another `.
 
-![[/media/Pasted image 20220531175423.png]]
+[](/media/Pasted image 20220531175423.png)
 
 From there, we were able to find the rest of the characters of M2 by using the crib text that we had and the XOR of C1 and C2. By using the previous message, we were able to get some of the plaintext message from C1 which is `this is a random`. 
 
-![[/media/Pasted image 20220531175559.png]]
+[](/media/Pasted image 20220531175559.png)
 
 
 After that, we tried guessing the plaintext message of C1 and C2 alternately. For instance, we guessed that the next word after `this is random` is  `message`. Then by using the plaintext of C1 as `this is a random message`, we were able to get a longer plaintext of C2 which is `here is another random m`. 
