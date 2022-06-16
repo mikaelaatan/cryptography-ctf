@@ -1,5 +1,16 @@
 # 🇧🇦🇸🇪6️⃣4️⃣
 
+### Challenge
+```
+Here's an easy challenge for you.
+
+I have here the flag in Base64, but for added security I converted the Base64 alphabet into emoji! 😂
+
+😐😵😍😃😒😕😼😱😎😃😐😮😌😃😍😟😐😵😑😆😞😶😉😡😜😶😔😶😍😂😭😥😛😓😁😪😌😕😽😩😜😵😽😮😌😇😑😟😙😖😹😣😜😧😥😰😍😳😄😰😛😢😄😡😈😒😅😽
+
+I just used the first 64 emoji: 😀😁😂😃😄😅😆😇😈😉😊😋😌😍😎😏 😐😑😒😓😔😕😖😗😘😙😚😛😜😝😞😟 😠😡😢😣😤😥😦😧😨😩😪😫😬😭😮😯 😰😱😲😳😴😵😶😷😸😹😺😻😼😽😾😿
+```
+
 ### Description
 - The challenge used Base64 encoding to hide the flag, but the base64 characters are converted into emojis. The 64 emojis (key) is provided in the challenge, and this maps to the 64 characters in the Base64 encoding scheme. For instance, 😀 maps to index 0 which is A, 😁 maps to index 1 which is B, and so on... To get the base64 encoded flag, get the index of each emoji in the flag (😐 is index 16) and then match the index to the Base64 character list (index 16 = Q). Finally, to get the plaintext flag, decode the base64 flag using the b64decode package from Python. 
 

@@ -1,5 +1,20 @@
 # Sussy Curve
 
+### Challenge
+```
+This curve is kinda sus...
+
+p = 19795792123893480164707100824397222730984965037169701408771662919270303874559
+E = EllipticCurve(GF(p), [0, 0])
+
+P = (707002063975494596713847148175220691822212124553576248947618210771357641646, 18227228301613195162842834072053449250839439585958223304702634485212835672756)
+Q = (2199645095445255323751849685677282723957624019648389953902214339928394082920, 2823110710129739364184391980414426860914344540615024907439483475467880621450)  # Q == d*P
+
+key = SHA256(str(d))  # use this to decrypt the flag
+
+[](/media/sussycurve.zip)
+
+```
 
 ### Description
 **Elliptic Curve Cryptography** is an encryption algorithm that paved the way for stronger security with smaller key sizes. Compared to algorithms like RSA or Diffie Hellman, it is more efficient because of its ability to produce smaller key sizes without sacrificing security.

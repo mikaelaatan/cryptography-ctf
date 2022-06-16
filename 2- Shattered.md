@@ -1,5 +1,15 @@
 # Shattered  
 
+### Challenge
+```
+The Better Freedom Wall admins have made "significant progress," whatever that means! You just found out that they have a super secret admin portal: [](https://bfwadmin.lunchtimeattack.wtf)
+
+Luckily, your friend also managed to yoink the server code that runs it.
+
+[](/media/admin_server.py)
+
+```
+
 ### Description
 
 "This industry cryptographic hash function standard is used for digital signatures and file integrity verification ([shattered.io]( https://shattered.io/))." In 2017, cryptographic researchers announced the first real-world collision attack that allows the creation of two documents with different contents, but  have the same SHA-1 digital signature. 

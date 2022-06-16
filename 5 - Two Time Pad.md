@@ -1,5 +1,13 @@
 # Two-Time Pad
 
+### Challenge
+```
+Here are five hex-encoded ciphertexts that are encrypted using a one-time pad, but they are all encrypted with the same key.
+
+64111f55cc2852fb7bc84a87614939c55b5ed07d7b60205a14592ad3ae2270603409b20c8db4f7f57bd284ec385e56d444d2ddf9ef1d5dddbcb4a4 781c0443cc2852fb7b865792674824880952db6a676c6752514f37d1bb3e20713f0ee00294b4fab12fcd88b83f104791559bc3fda2081cd2f7e3a4 791f565f833401b87b8618956a4876dc135ac62e7c69225114482cd9af7b6d71221ef31c81e0f7b47c9a83a9325e139d55d8c2e5bf1959ddb2deb0 7159075385224afb789a5791610d30c70313df7b6571225b145332d5ae7b747c344dfe1a9eb9bfb160ddc1ad39541391559bdbf5a30159ddb2f3fe 532a356fb37019ef34d80bb94c7910d3246cda606d5e335659591bddb93a6e670e19fa1ebbabfaac50d392932243569d6fd4def0b63253d7f1fff7
+
+Decrypt the last ciphertext to get the flag.
+```
 
 ### Description
 The Two-Time Pad challenge makes use of the one time pad encryption technique to produce multiple cipher texts using the same key. The one time pad is an uncrackable encryption technique, if multiple conditions are met. In order to encrypt a message, a random secret key is used, and each bit or character of the plain text is encrypted by combining it with the corresponding bit or character of the secret key. 
@@ -22,11 +30,11 @@ The **strategy** was to look for the remaining characters of “CSCI_184.03_CTF{
 
 We knew that the characters were in C5, so we applied XOR to C2 and C5 to retrieve the first 16 characters of M2. Image below is from the crib drag website (using C2 as ciphertext 1 input, and flag as ciphertext 2 input). The result from the crib drag is the message from C2 which is `here is another `.
 
-![[Pasted image 20220531175423.png]]
+![[/media/Pasted image 20220531175423.png]]
 
 From there, we were able to find the rest of the characters of M2 by using the crib text that we had and the XOR of C1 and C2. By using the previous message, we were able to get some of the plaintext message from C1 which is `this is a random`. 
 
-![[Pasted image 20220531175559.png]]
+![[/media/Pasted image 20220531175559.png]]
 
 
 After that, we tried guessing the plaintext message of C1 and C2 alternately. For instance, we guessed that the next word after `this is random` is  `message`. Then by using the plaintext of C1 as `this is a random message`, we were able to get a longer plaintext of C2 which is `here is another random m`. 

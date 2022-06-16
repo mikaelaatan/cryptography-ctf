@@ -1,6 +1,18 @@
 # RSA Encraption
 
 
+### Challenge
+```
+The flag has been encrypted using 256-bit RSA encraption (no that's not a typo). This RSA variant is so secure you can't even decrypt it with "normal" RSA!
+
+N = 0x69692c95b90574445a697e1a5e6e10169cb172365f5273b492005b883265b26a15b8e76dc1c0a821e41fba789319851c2d5dd5f3c4fe3344f434c94852ba2d0d
+e = 0x11
+c = 0x3e79575d4ed2ba453618ba60cbd55421ea7e63723126991b6f4114e5f85937be4e3833d79741330a42938b68dc38eb0eada56bba2803566a0589c2d630d886db
+
+[](/media/rsa_encraption.sage)
+```
+
+
 ### Description
 The RSA encryption scheme is insecure, but a huge stepping stone for more secure schemes that are used in practice (Guadalupe, 2022). It makes use of public and private keys, wherein the concept is somewhat similar to giving someone you trust the key to your house to give them access to your place.
 

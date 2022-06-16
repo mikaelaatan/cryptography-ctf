@@ -1,5 +1,19 @@
  # I Wanna Cry
 
+ ### Challenge
+
+```
+Oh no! My friend got hit by a nasty ransomware called AESLocker. Now, all his files (even his final paper) are encrypted!
+
+Can you decrypt the files for him?
+
+[](/media/encrypted_files.zip)
+[](/media/aeslocker.py)
+
+```
+
+
+
 ### Description
 The challenge provides a ZIP file containing encrypted files with the extension `.enc`. To find the flag, the user must decrypt the file `flag.txt.enc`. From the provided encryption code, the team identified that the encryption uses AES in CTR mode. Additionally, since we have a plaintext-ciphertext pair from `aeslocker.py` and `aeslocker.py.enc`, then it's possible to XOR the given pair with the ciphertext flag to decrypt it and get the plaintext. 
 
